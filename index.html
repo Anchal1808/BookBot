@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BookBot — Book Recommendation Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="app-header">
+      <div class="logo">
+        <img src="assets/logo.jpg" alt="logo">
+         <span>BookBot</span></div>
+      <div class="subtitle">Your personal book recommendation assistant</div>
+    </header>
+
+    <section class="chat-wrapper">
+      <div id="chat" class="chat">
+        <div class="bot-message">
+          Hi! I'm BookBot. Tell me an author, a genre, or a keyword (example: "books by J.K. Rowling" or "best mystery novels").
+        </div>
+      </div>
+
+      <form id="inputForm" class="input-area" autocomplete="off">
+        <input id="userInput" type="text" placeholder="Type something like: 'books by J.K. Rowling'" />
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <!-- <small>Optional: Integrate IBM Watson below (see README section in code)</small> -->
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+
+  <!-- ---------- Optional: Watson Web Chat integration ----------
+       To use Watson's web chat instead of local bot responses,
+       uncomment the block below and replace placeholders with your
+       integrationID, region and (optionally) serviceInstanceID.
+  <script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "YOUR-INTEGRATION-ID", // e.g. "your-id-here"
+      region: "YOUR-REGION", // e.g. "us-south"
+      serviceInstanceID: "YOUR-SERVICE-ID", // optional
+      onLoad: function(instance) {
+        instance.render();
+      }
+    };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/latest/WebChat.min.js";
+      document.head.appendChild(t);
+    });
+  </script>
+  ----------------------------------------------------------------- -->
+
+</body>
+</html>
