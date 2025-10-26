@@ -18,15 +18,7 @@ body{
   color:white;
 }
 
-/* body{
-  background: url('assets/background.jpg') no-repeat center center fixed;
-  background-size: cover;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  padding:24px;
-  color:white;
-} */
+
 
 
 .app{
@@ -44,8 +36,6 @@ body{
   border-bottom:1px solid rgba(255,255,255,0.03);
   display:flex;flex-direction:column;gap:6px;background:linear-gradient(90deg, rgba(255,255,255,0.01), transparent);
 }
-/* .logo {font-weight:700;font-size:20px;color:var(--accent)}
-.logo span{margin-left:8px;color:#ffd6bf} */
 
 
 .logo {
@@ -95,3 +85,4 @@ body{
 .book-desc{font-size:13px;color:#cde4f6;margin-top:6px}
 
 .footer{padding:12px 18px;border-top:1px solid rgba(255,255,255,0.02);font-size:12px;color:var(--muted);text-align:center}
+
