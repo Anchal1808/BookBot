@@ -1,7 +1,4 @@
-// Simple client-only Shelfie that queries Google Books API for recommendations.
-// No API key required for basic searches (Google Books has quotas; for heavy usage add an API key).
-// This code also includes a tiny parser for inputs like:
-// "books by j.k. rowling", "recommend mystery books", "give me books about AI"
+
 
 const chatEl = document.getElementById('chat');
 const form = document.getElementById('inputForm');
@@ -141,3 +138,4 @@ input.addEventListener('keydown', (e) => {
     form.requestSubmit();
   }
 });
+
